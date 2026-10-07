@@ -55,6 +55,10 @@ export const HomePage: React.FC<HomePageProps> = ({
         <div className="absolute inset-0 z-0">
           <img
             src={hotelImages.heroExterior}
+            onError={(e) => {
+              e.currentTarget.onerror = null;
+              e.currentTarget.src = hotelImages.fallbackHeroExterior;
+            }}
             alt="Sumou Hotel Al Khobar Luxury Exterior"
             referrerPolicy="no-referrer"
             className="w-full h-full object-cover object-center scale-105 transition-transform duration-1000 ease-out"

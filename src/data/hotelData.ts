@@ -14,8 +14,11 @@ import whyLuxuryImg from '../assets/images/why_luxury_atmosphere_1791373491160.j
 import whyHospitalityImg from '../assets/images/why_saudi_hospitality_1791373504907.jpg';
 import whyCausewayImg from '../assets/images/why_causeway_transit_1791373520941.jpg';
 
+const cloudinaryHeroBg = 'https://res.cloudinary.com/k7og2ybq/image/upload/v1791373894/unnamed_3.jpg';
+
 export const hotelImages = {
-  heroExterior,
+  heroExterior: cloudinaryHeroBg,
+  fallbackHeroExterior: heroExterior,
   royalSuite: royalSuiteImg,
   grandLobby: grandLobbyImg,
   executiveRoom: executiveRoomImg,
