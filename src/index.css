@@ -1,0 +1,68 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --color-bg-deep: #0a0414;
+    --color-bg-card: #140924;
+    --color-bg-surface: #1b0d32;
+    --color-gold-light: #f7e199;
+    --color-gold: #d4af37;
+    --color-gold-dark: #aa8524;
+    --color-purple-accent: #371457;
+    --color-purple-border: rgba(212, 175, 55, 0.2);
+  }
+
+  body {
+    background-color: #090412;
+    color: #f3ecfb;
+    font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+    overflow-x: hidden;
+  }
+
+  h1, h2, h3, h4, .font-serif, .font-luxury {
+    font-family: 'Cinzel', serif, Georgia;
+    letter-spacing: 0.02em;
+  }
+}
+
+/* Custom luxury gold styling */
+.text-gold-gradient {
+  background: linear-gradient(135deg, #fceec5 0%, #d4af37 50%, #aa8524 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.bg-gold-gradient {
+  background: linear-gradient(135deg, #f4db8a 0%, #d4af37 50%, #b8912e 100%);
+}
+
+.bg-purple-gold-glass {
+  background: rgba(20, 9, 36, 0.85);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(212, 175, 55, 0.2);
+}
+
+.gold-border-glow {
+  box-shadow: 0 0 25px -5px rgba(212, 175, 55, 0.15);
+}
+
+.gold-hover-glow:hover {
+  box-shadow: 0 0 30px -4px rgba(212, 175, 55, 0.3);
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #090412;
+}
+::-webkit-scrollbar-thumb {
+  background: #371457;
+  border-radius: 4px;
+  border: 1px solid rgba(212, 175, 55, 0.3);
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #501d7e;
+}

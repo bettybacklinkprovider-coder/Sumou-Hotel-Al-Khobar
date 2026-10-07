@@ -1,0 +1,370 @@
+import { HotelInfo, Room, AmenityItem, FAQItem } from '../types';
+
+import heroExterior from '../assets/images/hero_hotel_exterior_1791371181403.jpg';
+import royalSuiteImg from '../assets/images/luxury_royal_suite_1791371192961.jpg';
+import grandLobbyImg from '../assets/images/hotel_grand_lobby_1791371203770.jpg';
+import executiveRoomImg from '../assets/images/executive_deluxe_room_1791371214188.jpg';
+import fineDiningImg from '../assets/images/hotel_fine_dining_1791371223974.jpg';
+import amenityValetImg from '../assets/images/amenity_valet_parking_1791371711009.jpg';
+import amenityCoffeeImg from '../assets/images/amenity_arabic_coffee_1791371730846.jpg';
+import amenityReceptionImg from '../assets/images/amenity_reception_desk_1791371747565.jpg';
+import amenityRoomServiceImg from '../assets/images/amenity_room_service_1791371763108.jpg';
+import whyCornicheImg from '../assets/images/why_corniche_location_1791373468069.jpg';
+import whyLuxuryImg from '../assets/images/why_luxury_atmosphere_1791373491160.jpg';
+import whyHospitalityImg from '../assets/images/why_saudi_hospitality_1791373504907.jpg';
+import whyCausewayImg from '../assets/images/why_causeway_transit_1791373520941.jpg';
+
+export const hotelImages = {
+  heroExterior,
+  royalSuite: royalSuiteImg,
+  grandLobby: grandLobbyImg,
+  executiveRoom: executiveRoomImg,
+  fineDining: fineDiningImg,
+  amenityValet: amenityValetImg,
+  amenityCoffee: amenityCoffeeImg,
+  amenityReception: amenityReceptionImg,
+  amenityRoomService: amenityRoomServiceImg,
+  whyCorniche: whyCornicheImg,
+  whyLuxury: whyLuxuryImg,
+  whyHospitality: whyHospitalityImg,
+  whyCauseway: whyCausewayImg,
+};
+
+export const hotelInfo: HotelInfo = {
+  name: 'Sumou Hotel Al Khobar',
+  phone: '+966138303347',
+  displayPhone: '+966 13 830 3347',
+  email: 'reservations@sumouhotel.com',
+  addressAr: 'بن عبد العزيز جنوب, Alkurnaish، شارع الامير تركي, Al Khobar, Saudi Arabia',
+  addressEn: 'Prince Turki Street, South Corniche, Al Khobar 34413, Eastern Province, Saudi Arabia',
+  city: 'Al Khobar',
+  country: 'Saudi Arabia',
+  checkIn: '14:00 (2:00 PM)',
+  checkOut: '12:00 (12:00 PM)',
+  currency: 'SAR',
+};
+
+export const hotelRooms: Room[] = [
+  {
+    id: 'royal-corniche-suite',
+    name: 'Royal Corniche Suite',
+    category: 'Suite',
+    priceSAR: 1450,
+    image: royalSuiteImg,
+    shortDescription: 'Panoramas of the Arabian Gulf paired with bespoke dark purple velvet furnishing and separate royal salon.',
+    fullDescription: 'Indulge in our signature royal accommodation. The Royal Corniche Suite features soaring ceilings, opulent golden architectural accents, an expansive master bedroom with a handcrafted king-size bed, an independent reception majlis, and floor-to-ceiling windows overlooking the Al Khobar sea coast.',
+    sizeM2: 85,
+    bedType: 'Super King Bed',
+    occupancy: '2 Adults, 2 Children',
+    view: 'Arabian Gulf Corniche View',
+    amenities: [
+      'High-Speed Free Wi-Fi 6',
+      '24/7 Butler & Room Service',
+      'Italian Marble Bathroom & Jacuzzi',
+      'Nespresso Coffee Atelier',
+      '65" Smart 4K OLED TV',
+      'Complimentary Valet Parking',
+      'Sumou Executive Lounge Access',
+      'Luxury Rituals Bath Amenities'
+    ],
+    featured: true,
+  },
+  {
+    id: 'executive-deluxe-king',
+    name: 'Executive Deluxe Room',
+    category: 'Executive',
+    priceSAR: 650,
+    image: executiveRoomImg,
+    shortDescription: 'Tailored for discerning business and leisure travelers featuring refined brass finishes and ergonomic workspace.',
+    fullDescription: 'Crafted with immaculate attention to detail, our Executive Deluxe Room provides a serene sanctuary. Rich purple upholstered headboards harmonize with warm wood accents, plush triple-sheeted Egyptian cotton linens, and a dedicated executive working desk.',
+    sizeM2: 46,
+    bedType: 'King Size Bed',
+    occupancy: '2 Adults',
+    view: 'City & Corniche Skyline',
+    amenities: [
+      'High-Speed Free Wi-Fi',
+      '24/7 Room Service',
+      'Marble En-Suite with Rain Shower',
+      'Espresso Maker & Artisan Teas',
+      '55" 4K Smart Television',
+      'Ergonomic Leather Desk Area',
+      'Climate Control Air Conditioning',
+      'Soundproof Triple-Glazed Windows'
+    ],
+    featured: true,
+  },
+  {
+    id: 'sumou-presidential-suite',
+    name: 'Sumou Presidential Suite',
+    category: 'Suite',
+    priceSAR: 2100,
+    image: grandLobbyImg,
+    shortDescription: 'The pinnacle of luxury in Al Khobar with a private dining room, marble jacuzzi, and personalized concierge.',
+    fullDescription: 'An extraordinary sanctuary occupying a prime high floor. Offering two regal master suites, a lavish formal dining parlor for six guests, a private study, and VIP private check-in with dedicated 24-hour host service.',
+    sizeM2: 130,
+    bedType: '2 King Size Beds',
+    occupancy: '4 Adults, 2 Children',
+    view: 'Panoramic Gulf & Corniche Coastline',
+    amenities: [
+      'Dedicated 24/7 VIP Concierge',
+      'Private Dining Parlor',
+      'Dual Marble Bathrooms & Spa Tub',
+      'Complimentary Daily Minibar Refills',
+      'Airport Limousine Transfer Available',
+      'Full Sumou Lounge Privileges',
+      'Curated Arabian Welcome Sweets',
+      'Fast 1Gbps Fiber Internet'
+    ],
+    featured: true,
+  },
+  {
+    id: 'deluxe-city-view-room',
+    name: 'Deluxe City View Room',
+    category: 'Deluxe',
+    priceSAR: 490,
+    image: executiveRoomImg,
+    shortDescription: 'Crisp comfort and elegant golden accents with expansive vistas of dynamic Al Khobar city center.',
+    fullDescription: 'A comfortable haven after exploring Prince Turki Street and the Corniche. Featuring our signature plush bed, custom-tailored dark purple drapery, ambient golden sconces, and an indulgent walk-in rain shower.',
+    sizeM2: 38,
+    bedType: 'King Bed or 2 Twin Beds',
+    occupancy: '2 Adults',
+    view: 'Al Khobar City Center',
+    amenities: [
+      'Free High-Speed Wi-Fi',
+      '24/7 Front Desk Support',
+      'Individual AC Temperature Control',
+      '50" Smart Screen with Streaming',
+      'In-Room Digital Safe',
+      'Premium Tea & Coffee Kettle',
+      'Plush Terry Cloth Bathrobes & Slippers'
+    ],
+    featured: false,
+  },
+  {
+    id: 'executive-family-suite',
+    name: 'Executive Family Suite',
+    category: 'Family',
+    priceSAR: 980,
+    image: royalSuiteImg,
+    shortDescription: 'Generous two-bedroom arrangement thoughtfully curated for families desiring privacy and supreme comfort.',
+    fullDescription: 'Designed specifically for family getaways in the Eastern Province. Features a master bedroom with king bed, an interconnected second bedroom with twin beds, a welcoming family living parlor, and dual en-suite washrooms.',
+    sizeM2: 78,
+    bedType: '1 King Bed + 2 Twin Beds',
+    occupancy: '4 Adults, 2 Children',
+    view: 'Corniche & Boulevard Vista',
+    amenities: [
+      'Interconnected Bed Chambers',
+      'Spacious Family Living Parlor',
+      '2 Full Bathrooms with Bathtub',
+      'Child-Friendly Amenities on Request',
+      '24/7 Room Dining Service',
+      'Complimentary Secure Covered Parking',
+      'Unlimited High-Speed Wi-Fi'
+    ],
+    featured: false,
+  },
+  {
+    id: 'premium-sea-view-deluxe',
+    name: 'Premium Sea View Deluxe',
+    category: 'Deluxe',
+    priceSAR: 780,
+    image: heroExteriorImgFallback(heroExterior),
+    shortDescription: 'Wake up to sunbeams dancing on the Arabian Gulf with private balcony vistas and five-star luxuries.',
+    fullDescription: 'Positioned toward the azure waters of the Arabian Gulf. Guests can savor morning Arabic coffee from their private Juliet balcony while enjoying the coastal breeze of Al Khobar South Corniche.',
+    sizeM2: 44,
+    bedType: 'King Size Bed',
+    occupancy: '2 Adults, 1 Child',
+    view: 'Unobstructed Arabian Gulf',
+    amenities: [
+      'Private Sea-Facing Balcony',
+      'Complimentary Breakfast Buffet',
+      'Artisanal Nespresso Machine',
+      'Luxury Feather Duvet & Pillow Menu',
+      'Smart Climate Automation',
+      'Complimentary High-Speed Wi-Fi',
+      '24/7 In-Room Dining'
+    ],
+    featured: false,
+  },
+];
+
+function heroExteriorImgFallback(img: string) {
+  return img;
+}
+
+export const hotelAmenities: AmenityItem[] = [
+  {
+    id: 'wifi',
+    title: 'High-Speed Free Wi-Fi',
+    titleAr: 'واي فاي فائق السرعة مجاناً',
+    description: 'Ultra-fast fiber optic connectivity accessible throughout all suites, public salons, and conference areas.',
+    descriptionAr: 'إنترنت ألياف ضوئية فائق السرعة يغطي جميع الغرف والأجنحة والصالات مجاناً وبدون انقطاع.',
+    iconName: 'Wifi',
+    image: executiveRoomImg,
+    tagEn: 'FIBER OPTIC',
+    tagAr: 'ألياف ضوئية',
+  },
+  {
+    id: 'reception',
+    title: '24/7 Luxury Reception',
+    titleAr: 'استقبال فاخر على مدار 24/7',
+    description: 'Bilingual reception and round-the-clock concierge team providing seamless check-in and local assistance.',
+    descriptionAr: 'طاقم استقبال واستعلامات ثنائي اللغة يعمل على مدار الساعة لخدمتكم وتلبية كافة طلباتكم.',
+    iconName: 'Clock',
+    image: amenityReceptionImg,
+    tagEn: '24/7 SERVICE',
+    tagAr: 'خدمة 24 ساعة',
+  },
+  {
+    id: 'rooms',
+    title: 'Comfortable Rooms & Suites',
+    titleAr: 'غرف وأجنحة راقية ومريحة',
+    description: 'Sound-insulated guest rooms furnished with custom purple velvet, bespoke golden accents, and luxury mattresses.',
+    descriptionAr: 'أجنحة عازلة للصوت مجهزة بمفروشات مخملية وأسرة ملكية فاخرة لراحة نوم مثالية وهادئة.',
+    iconName: 'BedDouble',
+    image: royalSuiteImg,
+    tagEn: 'ROYAL COMFORT',
+    tagAr: 'راحة ملكية',
+  },
+  {
+    id: 'room-service',
+    title: '24/7 Gourmet Room Service',
+    titleAr: 'خدمة غرف ومأكولات فاخرة 24/7',
+    description: 'Indulge in hot authentic Saudi dishes and international fine cuisine delivered straight to your suite door.',
+    descriptionAr: 'قائمة طعام فاخرة تضم أشهى الأطباق السعودية والعالمية تصلك ساخنة إلى باب جناحك في أي وقت.',
+    iconName: 'UtensilsCrossed',
+    image: amenityRoomServiceImg,
+    tagEn: 'IN-ROOM DINING',
+    tagAr: 'طعام فاخر',
+  },
+  {
+    id: 'parking',
+    title: 'Complimentary Valet Parking',
+    titleAr: 'مواقف مجانية وخدمة صف السيارات',
+    description: 'Secure, covered on-site private parking with dedicated complimentary valet attendants at your service.',
+    descriptionAr: 'مواقف سيارات آمنة ومظللة مع خدمة صف السيارات المجانية وسريعة عند مدخل الفندق.',
+    iconName: 'Car',
+    image: amenityValetImg,
+    tagEn: 'VALET PARKING',
+    tagAr: 'خدمة صف السيارات',
+  },
+  {
+    id: 'ac',
+    title: 'Climate Control AC',
+    titleAr: 'تكييف هواء ذكي وتحكم مناخي',
+    description: 'Whisper-quiet precision multi-zone air conditioning ensuring the perfect refreshing ambient climate.',
+    descriptionAr: 'تكييف مركزي متطور فائق الهدوء مع تحكم مستقل يضمن أجواءً معتدلة ومنعشة طوال إقامتكم.',
+    iconName: 'Wind',
+    image: heroExterior,
+    tagEn: 'SMART CLIMATE',
+    tagAr: 'تحكم ذكي',
+  },
+  {
+    id: 'dining',
+    title: 'Restaurant & Arabic Lounge',
+    titleAr: 'مطعم وصالة ضيافة وقهوة عربية',
+    description: 'Savor gourmet breakfast buffets, authentic Arabic coffee, dates, and fine dining creations.',
+    descriptionAr: 'بوفيه إفطار فاخر، قهوة سعودية أصيلة وتمور فاخرة مع تشكيلة من أشهى المأكولات العالمية.',
+    iconName: 'Coffee',
+    image: amenityCoffeeImg,
+    tagEn: 'ARABIC COFFEE',
+    tagAr: 'قهوة سعودية أصيلة',
+  },
+  {
+    id: 'family',
+    title: 'Family-Friendly Facilities',
+    titleAr: 'مرافق وخدمات متكاملة للعائلات',
+    description: 'Interconnected family suites, baby cribs on request, family dining menus, and dedicated hospitality.',
+    descriptionAr: 'أجنحة عائلية متصلة واسعة، أسرّة أطفال، وخصوصية تامة تلبي احتياجات العائلة السعودية والخليجية.',
+    iconName: 'Users',
+    image: grandLobbyImg,
+    tagEn: 'FAMILY SUITES',
+    tagAr: 'أجنحة عائلية',
+  },
+];
+
+export const whyChoosePoints = [
+  {
+    number: '01',
+    title: 'Prime Al Khobar Location',
+    titleAr: 'موقع استراتيجي على كورنيش الخبر',
+    description: 'Situated on Prince Turki Street, directly adjacent to Alkurnaish South. Seconds from seaside promenades, luxury boutiques, and waterfront dining.',
+    descriptionAr: 'على شارع الأمير تركي مباشرة بالقرب من كورنيش الخبر الجنوبي، خطوات من الممشى البحري والمطاعم الراقية ومراكز التسوق.',
+    metric: '2 Min',
+    metricLabel: 'Walk to Corniche',
+    metricAr: 'دقيقتان',
+    metricLabelAr: 'سيراً إلى الكورنيش',
+    image: whyCornicheImg,
+    badgeAr: 'واجهة بحرية',
+    badgeEn: 'CORNICHE',
+  },
+  {
+    number: '02',
+    title: 'Uncompromised Luxury Atmosphere',
+    titleAr: 'أجواء ملكية فخمة بلون أرجواني وذهبي',
+    description: 'Immerse yourself in our signature Dark Purple & Golden design identity, blending contemporary regal elegance with Arabian warmth.',
+    descriptionAr: 'تصاميم داخلية ملكية تجمع بين فخامة اللون البنفسجي الداكن واللمسات الذهبية مع راحة خمس نجوم استثنائية.',
+    metric: '5-Star',
+    metricLabel: 'Bespoke Finishings',
+    metricAr: '5 نجوم',
+    metricLabelAr: 'تجهيزات راقية',
+    image: whyLuxuryImg,
+    badgeAr: 'فخامة ملكية',
+    badgeEn: 'LUXURY INTERIOR',
+  },
+  {
+    number: '03',
+    title: 'Exceptional Saudi Hospitality',
+    titleAr: 'أصالة الضيافة والكرم السعودي',
+    description: 'Our attentive, multilingual team delivers personalized 24/7 guest service, valet handling, and bespoke concierge itineraries.',
+    descriptionAr: 'كرم الضيافة السعودية الأصيلة مع فريق استقبال وخدمة غرف محترف يلبي كافة تطلعاتكم على مدار الساعة.',
+    metric: '24/7',
+    metricLabel: 'Attentive Service',
+    metricAr: '24/7',
+    metricLabelAr: 'خدمة ضيوف مستمرة',
+    image: whyHospitalityImg,
+    badgeAr: 'كرم الضيافة',
+    badgeEn: 'HOSPITALITY',
+  },
+  {
+    number: '04',
+    title: 'Convenient Access & Transit',
+    titleAr: 'سهولة وسرعة الوصول لجميع الوجهات',
+    description: 'Effortless access to King Fahd Causeway to Bahrain, Al Khobar Waterfront, Dhahran Techno Valley, and King Fahd International Airport.',
+    descriptionAr: 'موقع محوري يتيح وصولاً سريعاً إلى جسر الملك فهد المؤدي لمملكة البحرين، وادي الظهران، ومطار الملك فهد الدولي.',
+    metric: '10 Min',
+    metricLabel: 'To King Fahd Causeway',
+    metricAr: '10 دقائق',
+    metricLabelAr: 'إلى جسر الملك فهد',
+    image: whyCausewayImg,
+    badgeAr: 'جسر البحرين',
+    badgeEn: 'FAST ACCESS',
+  },
+];
+
+export const hotelFAQs: FAQItem[] = [
+  {
+    question: 'What are the check-in and check-out times at Sumou Hotel?',
+    answer: 'Standard check-in begins at 14:00 (2:00 PM) and check-out is until 12:00 (12:00 PM). Early check-in and late check-out can be requested upon availability or coordinated through our 24/7 reception desk.',
+  },
+  {
+    question: 'Where is Sumou Hotel Al Khobar located?',
+    answer: 'Sumou Hotel is located on Prince Turki Street, Al Kurnaish South, in the heart of Al Khobar, Saudi Arabia. We are just moments away from the scenic Al Khobar Corniche waterfront, restaurants, and premier shopping destinations.',
+  },
+  {
+    question: 'Is parking available on site, and is it free?',
+    answer: 'Yes, Sumou Hotel provides complimentary, secure, covered on-site parking for all registered guests. Complimentary valet service is also available at the hotel grand entrance.',
+  },
+  {
+    question: 'How can I make a direct reservation or speak to the front desk?',
+    answer: 'You can reserve directly through our online reservation form, or call our 24/7 direct telephone line at +966 13 830 3347. Our staff is fluent in Arabic and English.',
+  },
+  {
+    question: 'Do you offer family-friendly rooms and interconnected suites?',
+    answer: 'Yes! We feature Executive Family Suites with interconnected bedrooms, twin bed options, extra rollaway beds, and baby cribs upon request to ensure family comfort.',
+  },
+  {
+    question: 'What dining options are available inside Sumou Hotel?',
+    answer: 'Our on-site restaurant and lounge offers a daily gourmet breakfast buffet, traditional Saudi Arabian coffee and dates, all-day dining with Middle Eastern and international cuisines, and 24-hour in-room dining.',
+  },
+];

@@ -1,0 +1,6 @@
+{
+  "name": "Sumou Hotel Al Khobar",
+  "description": "Luxury hotel experience in Al Khobar, Saudi Arabia. Opulent rooms, refined Arabian hospitality, and prime Corniche location.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
